@@ -1,0 +1,211 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+
+
+<body>
+
+
+
+<table style="width:100% ;background-color:lightcyan;">
+  <tr>
+    <th><img src="https://media-cdn.tripadvisor.com/media/photo-s/03/71/70/6a/times-square-mall.jpg" alt="logo" style="float:left;width:130px;height:130px;"></th>
+    <th><a href="index.html">Home</a></th>
+    <th><a href="aboutus.html">About</a></th>
+    <th><a href="shopping.html">Shopping</a></th>
+    <th><a href="movies.html">Movies</a></th>
+    <th><a href="dining.html">dining</a></th>
+    <th><a href="entertainment.html">Entertainment</a></th>
+    <th><a href="liveevents.html">Live events</a></th>
+  </tr>
+  </table><br>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p>leave us a valuble message / suggestion to make us better:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="https://image.freepik.com/free-vector/contact-us-landing-page-flat-design_23-2148284185.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option value="australia">Australia</option>
+          <option value="canada">Canada</option>
+          <option value="india">India</option>
+          <option value="usa">USA</option>
+          <option value="united kingdom">UK</option>
+          
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<table  style = "font-family:Brush Script MT;font-size:40px;color:white;background-color:red">
+  <tr>
+    <th><img src="https://media-cdn.tripadvisor.com/media/photo-s/03/71/70/6a/times-square-mall.jpg" alt="logo" style="float:left;width:120px;height:120px;"></th>
+    <th><p style = "font-family:Brush Script MT;font-size:60px;color:white;background-color:red">
+My feelings for you are as tall as this seven-story Macy's.
+</p></th> 
+  </tr>
+ 
+</table>
+
+<table style="width:100% ;background-color:black;text-align: left; border: 1px solid black;border-collapse: collapse;color:white;">
+<tr>
+    <th>
+    	<ul>
+ 			Navigation<br>
+            <br><a href="shopping.html">shopping</a>
+            <br><a href="movies.html">movies</a>
+            <br><a href="dining.html">dinning</a>
+            <br><a href="entertainment.html">entertainment</a>
+            <br><a href="mallmap.html">mallmap</a>    
+		</ul> 
+    </th>
+    <th>
+    	<ul>
+ 			Custumer service <br>
+            <br><a href="aboutus.html">about us</a>
+            <br><a href="malladministration.html">mall administration</a>
+            <br><a href="faq.html">faq</a>
+            <br><a href="reviews.html">reviews & ratings</a>
+            <br><a href="contact.html"> contact</a>
+		</ul> 
+    </th>
+    <th>
+    	<ul>
+ 			working hours<br>
+            <table>
+            <tr>
+            	<th>
+      			
+                </th>
+                <th>
+      			weekends (saturday,sunday)
+                </th>
+                <th>
+      			weekdays (mon-fri)
+                </th>
+             </tr> 
+              <tr>
+            	<th>
+      			shopping
+                </th>
+                <th>
+      			9:00 am-23:00pm
+                </th>
+                <th>
+      			10:00 am-22:00pm
+                </th>
+             </tr><tr>
+            	<th>
+      			Entertainment zone
+                </th>
+                <th>
+      			9:00 am-23:00pm
+                </th>
+                <th>
+      			10:00 am-22:00pm
+                </th>
+             </tr><tr>
+            	<th>
+      			parking
+                </th>
+                <th>
+      			9:00 am-23:00pm
+                </th>
+                <th>
+      			10:00 am-22:00pm
+                </th>
+             </tr>
+             <tr>
+            	<th>
+      			movies
+                </th>
+                <th>
+      			9:00 am-24:00pm +(movie run time)
+                </th>
+                <th>
+      			10:00 am-24:00pm +(movie run time)
+                </th>
+             </tr>
+            </table>
+		</ul> 
+    </th>
+</tr>
+</body>
+</html>
