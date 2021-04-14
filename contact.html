@@ -1,77 +1,29 @@
+
+<!DOCTYPE html>
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-/* Style inputs */
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  margin-top: 6px;
-  margin-bottom: 16px;
-  resize: vertical;
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-/* Style the container/contact section */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 10px;
-}
-
-/* Create two columns that float next to eachother */
-.column {
-  float: left;
-  width: 50%;
-  margin-top: 6px;
+.fa {
   padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
 }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
+.fa:hover {
+    opacity: 0.7;
 }
 </style>
 </head>
-
-
-<body>
-
-
-
+<body >
 <table style="width:100% ;background-color:lightcyan;">
   <tr>
-    <th><img src="https://media-cdn.tripadvisor.com/media/photo-s/03/71/70/6a/times-square-mall.jpg" alt="logo" style="float:left;width:130px;height:130px;"></th>
+    <th><img src="https://media-cdn.tripadvisor.com/media/photo-s/03/71/70/6a/times-square-mall.jpg" alt="logo" style="float:left;width:120px;height:120px;"></th>
     <th><a href="index.html">Home</a></th>
     <th><a href="aboutus.html">About</a></th>
     <th><a href="shopping.html">Shopping</a></th>
@@ -81,39 +33,84 @@ input[type=submit]:hover {
     <th><a href="liveevents.html">Live events</a></th>
   </tr>
   </table><br>
+  
+  <div class="imagebg"></div>
+<div class="row " style="margin-top: 50px">
+    <div class="col-md-6 col-md-offset-3 form-container">
+        <h2>Contact us </h2><p>
+        <a href="mailto:coe19b004@iiitdm.ac.in"><img src="https://i.pinimg.com/564x/84/6a/03/846a03c6760f83f3a0e92609bca9cebf.jpg" style ="height:30px;width:30px"></a><a href="tel:7095131021"><br><img src="https://mpng.subpng.com/20180323/jyw/kisspng-droid-razr-hd-iphone-computer-icons-telephone-call-phone-5ab5b8eb53a3a3.5126635715218587953426.jpg"
+ style="width:30px;height:30px"></a><a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="https://www.youtube.com/channel/UCPDc-n1rN0oouT7pew3_QGw" class="fa fa-youtube"></a>
+<a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+ 
+ </p>
+        <h3>
+            Please send your valuble feed back to us:
+        </h3>
+        <form role="form" method="post" id="reused_form">
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                <label>How do you rate your overall experience in the mall?</label>
+                <p>
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="bad" >
+                    Bad
+                    </label>
 
-<div class="container">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <p>leave us a valuble message / suggestion to make us better:</p>
-  </div>
-  <div class="row">
-    <div class="column">
-      <img src="https://image.shutterstock.com/image-vector/contact-us-icon-single-high-260nw-567340633.jpg" style="width:100%">
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="average" >
+                    Average
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="experience" id="radio_experience" value="good" >
+                    Good
+                    </label>
+                </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <label for="comments">
+                        Comments:</label>
+                    <textarea class="form-control" type="textarea" name="Your experience " id="your experience" placeholder="please share your experience " maxlength="6000" rows="7"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="name">
+                        Your Name:</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <label for="email">
+                        Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+
+                        <div class="row">
+                <div class="col-sm-12 form-group">
+                    <button type="submit" class="btn btn-lg btn-warning btn-block" >Post </button>
+                </div>
+            </div>
+
+        </form>
+        <div id="success_message" style="width:100%; height:100%; display:none; ">
+            <h3>Posted your feedback successfully!</h3>
+        </div>
+        <div id="error_message"
+                style="width:100%; height:100%; display:none; ">
+                    <h3>Error</h3>
+                    Sorry there was an error sending your form.
+
+        </div>
     </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="country">Country</label>
-        <select id="country" name="country">
-          <option value="australia">Australia</option>
-          <option value="canada">Canada</option>
-          <option value="india">India</option>
-          <option value="usa">USA</option>
-          <option value="united kingdom">UK</option>
-          
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
 </div>
-
+  
+  
+  <br>
 <table  style = "font-family:Brush Script MT;font-size:40px;color:white;background-color:red">
   <tr>
     <th><img src="https://media-cdn.tripadvisor.com/media/photo-s/03/71/70/6a/times-square-mall.jpg" alt="logo" style="float:left;width:120px;height:120px;"></th>
@@ -122,9 +119,8 @@ My feelings for you are as tall as this seven-story Macy's.
 </p></th> 
   </tr>
  
-</table>
-
 <table style="width:100% ;background-color:black;text-align: left; border: 1px solid black;border-collapse: collapse;color:white;">
+
 <tr>
     <th>
     	<ul>
@@ -133,7 +129,7 @@ My feelings for you are as tall as this seven-story Macy's.
             <br><a href="movies.html">movies</a>
             <br><a href="dining.html">dinning</a>
             <br><a href="entertainment.html">entertainment</a>
-               
+                  
 		</ul> 
     </th>
     <th>
@@ -205,7 +201,4 @@ My feelings for you are as tall as this seven-story Macy's.
              </tr>
             </table>
 		</ul> 
-    </th>
-</tr>
-</body>
-</html>
+</th>
